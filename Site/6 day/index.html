@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header><h1>Шапка сайта</h1></header>
+	<title>Наша первая веб станица</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="descriptioon" content="Описание нашей первой Web-страницы." />
+	<meta name="keywords" content="web-страница, первая web-страница, html" />
+</head>
+<body>
+<header><h2>Сайт топового веб разраба</h2></header>
+	<form name="form" action="script.php" method="post" enctype="multipart/form-data"> <!-- method="get"  -->
+	<fieldset>
+		<legend>Основные дынные</legend>
+		<div>
+			<label for="firstname">Ваше имя</label>
+			<input id="firstname" type="text" name="firstname" value="Николай" disabled="disbled">
+		</div>
+		<div>
+			<label for="surname">Ваша фамилия</label>
+			<input id="surname" type="text" name="surname" placeholder="Иавнов" >
+		</div>
+		<div>
+			<label for="password">Ваш пароль</label>
+			<input id="password" type="password" name="password" placeholder="Ваш пароль" >
+		</div>
+		<div>
+			<label for="email">Ваша почта</label>
+			<input id="email" type="email" name="email" placeholder="fff@ff.ru" >
+		</div>
+		<div>
+			<label for="phone">Ваша телефон</label>
+			<input id="phone" type="tel" name="phone" placeholder="+79153333333" >
+		</div>
+	</fieldset>	
+	<div>
+		<label for="site">Ваша сайт</label>
+		<input id="site" type="url" name="site" placeholder="https://ruseller.com/">
+	</div>
+	<div>
+		<label>Ваш любимый цвет</label>
+		<input type="radio" name="color" value="1" />Зеленый
+		<input type="radio" name="color" value="2" />Красный
+		<input type="radio" name="color" value="3" />Синий
+	</div>
+	<div>
+		<label>Ваше любимое блюдо</label>
+		<input type="radio" name="food" value="1" />Суп
+		<input type="radio" name="food" value="2" />Мясл
+		<input type="radio" name="food" value="3" />Рыба
+	</div>
+	<div>
+		<label>Что Вам привезти</label>
+		<input type="checkbox" name="order" value="1" />Суп
+		<input type="checkbox" name="order" value="2" />Мясл
+		<input type="checkbox" name="order" value="3" />Рыба
+	</div>
+	<div>
+		<label for="news">Подписаться на новости</label>
+		<input id="news" type="checkbox" name="news" value="1" checked="checked"/>Политика
+	</div>
+	<div>
+		<label for="search">Нащ любимый поисковик</label>
+		<input id="search" type="text" name="search" list="search_list"/>
+		<datalist id="search_list">
+			<option value="Googe"></option>
+			<option value="Яндекс"></option>
+		</datalist>
+	</div>
+	<div>
+	<label for="file" >Файл</label>
+	<input id="file" type="file" name="file"/>
+	</div>
+	<div>
+	<label for="count" >Количество копий</label>
+	<input id="count" type="number" name="count" min="1" max="10"/>
+	</div>	
+	<div>
+		<label for="range">Диапазон</label>
+		<input id="range" type="range" name="range" min="1" max="10" step="2"/>
+	</div>	
+	<div>
+		<label for="date">Дата</label>
+		<input id="date" type="date" name="date"/>
+	</div>		
+	<div>
+		<label for="color">Цвет</label>
+		<input id="color" type="color" name="color"/>
+	</div>
+	<div>
+		<textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
+	</div>
+	<div>
+		<label for="city">Город</label>
+			<select id="city" name="city" size="3">
+				<optgroup label="Первая группа городов">
+					<option value="1">Москва</option>
+					<option value="1">Керч</option>
+				</optgroup>
+				<optgroup label="Вторая группа городов">
+					<option value="1">Питер</option>
+					<option value="1" selected="selected">Курск</option>
+					<option value="1">Казань</option>
+				</optgroup>
+			</select>
+	</div>
+	
+	<div>
+		<input type="hidden" name="article_id" value="100"/>
+		<input type="reset" name="reset" value="Сбросить"/>
+		<input type="submit" name="submit" value="Отправить" />
+	</div>
+	</form>
+</body>
+</html>
