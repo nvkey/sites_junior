@@ -1,4 +1,5 @@
-print("Hello World!")
-print ("Hello")
+print("Hello World!;")
+print ("Hello;")
+print ("Hello;")
 Hello advanced
 print (Hello advanced)
