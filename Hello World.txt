@@ -1,3 +1,2 @@
 print("Hello World!")
 print ("Hello")
-Print ('Hello my dear friend')
