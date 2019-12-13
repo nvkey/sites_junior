@@ -4,32 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Интернет магазин NVKeyBoardShop</h1>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="products.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <h1>Добро пожаловать в наш магазин! NVKeyBoardShop</h1>
+        <div>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <img class="logo" src="img/raccoon_logo.jpg" alt="logo">
+        </div>
         <hr>
     </header>
     <content>
-        <h3>Напишите нам</h2>
-            <form action="contacts.html">
-                <fieldset>
-                	<legend>Обратная связь</legend>
-                    <input id="name" type="text" placeholder="Ваше имя">
-                    <label for="name">Имя</label> <br>
-                    <input id="name2" type="text">
-                    E-mail.
-                    Тема.
-                    Текстовое поле.
-                    <input type="submit">
-                </fieldset>
-            </form>
+        <form action="contacts.html">
+            <fieldset>
+                <legend>
+                    <h3>Напишите нам</h3>
+                </legend>
+                <input class="text" id="name" type="text" placeholder="Ваше имя">
+                <label for="name">Имя</label> <br>
+                <input id="email" type="text" placeholder="Ваша почта">
+                <label for="email">E-mail</label> <br>
+                <input class="text" id="theme" type="text" placeholder="Тема обращения">
+                <label for="theme">Тема</label> <br>
+                <textarea class="text" name="" id="text" cols="30" rows="10"></textarea>
+                <p> <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить"></p>
+            </fieldset>
+        </form>
+        <div>
+            <h3>Адрес</h3>
+            <p>Контактный номер телефона интернет-магазина: -----</p>
+            <p>Адрес: г. Королев</p>
+            <p>E-mail: nvk.mpei@gmail.com</p>
+        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGhSzIOH" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
     </content>
     <hr>
     <footer>&copy;Все права защищены</footer>
